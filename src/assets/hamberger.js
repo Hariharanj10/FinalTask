@@ -1,7 +1,9 @@
 import React from "react";
+import styled from "styled-components"
 
 const Hamberger = () => {
   return (
+    <>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -14,6 +16,7 @@ const Hamberger = () => {
         fill="#637487"
       />
     </svg>
+    </>
   );
 };
 

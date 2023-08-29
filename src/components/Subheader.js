@@ -1,27 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import InfoIcon from "../assets/InfoIcon";
-import BgIcon from "../assets/BgIcon";
 import DateRangePicker from "./DateRangePicker";
 
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 1219px;
+  min-width: 1219px;
   align-items: center;
-  margin-left:80px;
+  font-family: SF Pro Display;
 `;
 export const LeftNav = styled.div`
   display: flex;
 `;
 export const Text = styled.div`
-  color: var(--grey-s-10, #415367);
-  font-family: SF Pro Display;
+  color: #415367;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
   margin-left: 7px;
+  margin:26px 293px 26px 1px;
 `;
 
 export const RightNav = styled.div`
@@ -29,26 +27,23 @@ export const RightNav = styled.div`
   width: 496px;
   height: 32px;
   flex-shrink: 0;
+  margin: 27px 9px 29px 0px;
 `;
 export const StyledText = styled.div`
   color: #242e39;
-  font-family: SF Pro Display;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 25px;
-  
+  margin: 27px 9px 29px 0px;
 `;
 export const TextBorder = styled.div`
   width: 34px;
   height: 23px;
   flex-shrink: 0;
   border-radius: 13px;
-  background: var(--blue-t-85, #dde8f2);
+  background: #dde8f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +56,6 @@ export const ExportButton = styled.button`
   border-radius: 3px;
   background-color: #e4e7ea;
   color: #242e39;
-  font-family: SF Pro Display;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -79,7 +73,6 @@ const Subheader = () => {
         <TextBorder>
           <StyledText>7D</StyledText>
         </TextBorder>
-
         <StyledText>15D</StyledText>
         <StyledText>1M</StyledText>
         <StyledText>6M</StyledText>

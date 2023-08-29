@@ -1,8 +1,12 @@
 import React from "react";
+import { styled } from "styled-components";
 
+const Container =styled.div`
+  margin:0px 25px;
+`
 const HoridonzalVector = () => {
   return (
-    <div>
+    <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="743"
@@ -12,7 +16,7 @@ const HoridonzalVector = () => {
       >
         <path d="M0 1h743" stroke="#E4E7EA" />
       </svg>
-    </div>
+    </Container>
   );
 };
 

@@ -1,8 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 
+const Container=styled.div`
+  margin:27px 7px 19px 19px;
+`
 const InfoIcon = () => {
   return (
-    <div>
+    <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="18"
@@ -25,7 +29,7 @@ const InfoIcon = () => {
           </clipPath>
         </defs>
       </svg>
-    </div>
+    </Container>
   );
 };
 
