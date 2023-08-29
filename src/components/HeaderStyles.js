@@ -7,4 +7,5 @@ export const HeaderContainer = styled.div`
   flex-shrink: 0;
   background-color: #FFF;
   justify-content:space-between;
+  margin-left:80px;
 `;

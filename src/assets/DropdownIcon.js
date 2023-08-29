@@ -1,8 +1,15 @@
 import React from "react";
+import styled from "styled-components";
 
+const Container=styled.div`
+width: 16px;
+height: 16px;
+margin-top:-17px;
+
+`
 const DropdownIcon = () => {
   return (
-    <div>
+    <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -18,7 +25,7 @@ const DropdownIcon = () => {
           stroke-linejoin="round"
         />
       </svg>
-    </div>
+    </Container>
   );
 };
 

@@ -69,7 +69,8 @@ export const Line = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:17px;
+  margin-top:24px;
+  margin-right:15px;
 `;
 export const Userwrapper = styled.div`
   display: flex;
