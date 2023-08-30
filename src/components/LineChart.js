@@ -1,33 +1,24 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
+import React from "react";
+import { Line } from "react-chartjs-2";
 
-const LineGraph = () => {
+const LineChart = () => {
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
+    labels: ["January", "February", "March", "April", "May"],
     datasets: [
       {
-        label: 'Sample Line Graph',
-        data: [12, 19, 3, 5, 2, 3],
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 2,
-        fill: false,
+        label: "Monthly Sales",
+        data: [65, 59, 80, 81, 56],
+        borderColor: "rgb(75, 192, 192)",
+        tension: 0.1,
       },
     ],
   };
 
-  const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-  };
-
   return (
     <div>
-      <Line data={data} options={options} />
+      <Line data={data} />
     </div>
   );
 };
 
-export default LineGraph;
+export default LineChart;

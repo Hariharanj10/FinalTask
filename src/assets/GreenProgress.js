@@ -4,15 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   margin-top: 18px;
 `;
-const Text = styled.div`
-  color: #000;
-  text-align: center;
-  font-family: SF Pro Display;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-`;
+
 const GreenProgress = () => {
   return (
     <Container>

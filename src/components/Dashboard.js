@@ -8,6 +8,9 @@ import styled from "styled-components";
 import ActiveCampaigns from "./ActiveCampaigns";
 import LeaderBoard from "./LeaderBoard";
 import SurveyTrend from "./SurveyTrend";
+import Transaction from "./Transaction";
+import Products from "./Products";
+import ProductContainer from "./ProductContainer";
 
 const Container=styled.div`
     margin: 20px;
@@ -37,7 +40,10 @@ const SecondColumn = styled.div`
   gap: 20px;
   width: 100%;
 `;
-
+const TransactionSection=styled.div`
+  display:flex;
+  gap:19px;
+`
 const Dashboard = () => {
   return (
     <Container>
@@ -49,6 +55,12 @@ const Dashboard = () => {
             <ImageContainer />
             <AccountProfile />
             <SurveyTrend />
+            <TransactionSection>
+            <Transaction/>
+            <Transaction/>
+            </TransactionSection>
+            <Products/>
+            <ProductContainer/>
           </FirstColumn>
           <SecondColumn>
             <Score />

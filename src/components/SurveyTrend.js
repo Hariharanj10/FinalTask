@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import LineGraph from "./LineChart";
+import LineChart from "./LineChart";
 
 const Container = styled.div`
   display: flex;
   width: 793px;
+  height: 331px;
 `;
 const Header = styled.div`
   display: flex;
@@ -21,7 +22,6 @@ const Title = styled.div`
   font-weight: 400;
   line-height: normal;
   display: flex;
-  // align-items:center;
   margin: 10px 551px 11px 20px;
 `;
 const SurveyTrend = () => {
@@ -30,7 +30,7 @@ const SurveyTrend = () => {
       <Header>
         <Title>Transaction and Survey Trend</Title>
       </Header>
-      {/* <LineGraph/> */}
+      {/* <LineChart/> */}
     </Container>
   );
 };

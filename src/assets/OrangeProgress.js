@@ -1,8 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 
+const Container =styled.div`
+  margin-top:18px;
+`;
 const OrangeProgress = () => {
   return (
-    <div>
+    <Container>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="87"
@@ -34,10 +38,10 @@ const OrangeProgress = () => {
           text-align="center"
           line-height="normal"
         >
-          61.2%
+          51.8%
         </text>
       </svg>
-    </div>
+    </Container>
   );
 };
 export default OrangeProgress;

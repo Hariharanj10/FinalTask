@@ -10,19 +10,32 @@ import {
   StyledImg,
   StyledTable,
   TableData,
-  TableHeader,
   TableRow,
   TableHeaderRow,
   ImgRow,
+  TableDataScore,
+  TableDataID,
+  HeaderTitle1,
+  HeaderTitle2,
+  HeaderTitle3
 } from "./Styles/LeaderBoardStyles";
 const LeaderBoard = () => {
   const columns = ["Rank", "Agents", "Average Score"];
   const rows = [
-    { rank: 1, agents: "Agent A", score: 95 },
-    { rank: 2, agents: "Agent B", score: 85 },
-    { rank: 3, agents: "Agent C", score: 78 },
-    { rank: 4, agents: "Agent D", score: 72 },
-    { rank: 5, agents: "Agent E", score: 68 },
+    { rank: 1, agents: "Agent A", score: "9,500" },
+    { rank: 2, agents: "Agent B", score: "8,500" },
+    { rank: 3, agents: "Agent C", score: "7,800" },
+    { rank: 4, agents: "Agent D", score: "7,200" },
+    { rank: 5, agents: "Agent E", score: "6,800" },
+    { rank: 6, agents: "Agent A", score: "9,500" },
+    { rank: 7, agents: "Agent A", score: "9,500" },
+    { rank: 8, agents: "Agent A", score: "9,500" },
+    { rank: 9, agents: "Agent A", score: "9,500" },
+    { rank: 10, agents: "Agent A", score: "9,500" },
+    { rank: 11, agents: "Agent A", score: "9,500" },
+    { rank: 12, agents: "Agent A", score: "9,500" },
+    { rank: 13, agents: "Agent A", score: "9,500" },
+    { rank: 14, agents: "Agent A", score: "9,500" },
   ];
   const img = FirstImage;
   return (
@@ -37,21 +50,21 @@ const LeaderBoard = () => {
         </Header>
         <StyledTable>
           <TableHeaderRow>
-            {columns.map((column) => (
-              <TableHeader key={column}>{column}</TableHeader>
-            ))}
+            <HeaderTitle1>Rank</HeaderTitle1>
+            <HeaderTitle2>Agents</HeaderTitle2>
+            <HeaderTitle3>Average Score</HeaderTitle3>
           </TableHeaderRow>
           <tbody>
-            {rows.map((row) => (
-              <TableRow key={row.rank}>
-                <TableData>{row.rank}</TableData>
+            {rows?.map((row) => (
+              <TableRow key={row?.rank}>
+                <TableDataID>{row?.rank}</TableDataID>
                 <TableData>
                   <ImgRow>
                     <StyledImg src={img} />
-                    {row.agents}
+                    {row?.agents}
                   </ImgRow>
                 </TableData>
-                <TableData>{row.score}</TableData>
+                <TableDataScore>{row?.score}</TableDataScore>
               </TableRow>
             ))}
           </tbody>

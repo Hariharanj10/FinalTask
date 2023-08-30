@@ -12,7 +12,7 @@ const Container = styled.div`
   border-radius: 3px;
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
-  font-family: SF Pro Display;
+  font-family: 'SF Pro Display', sans-serif;
 `;
 const InnerWrapper = styled.div`
   display: flex;

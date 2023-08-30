@@ -12,10 +12,9 @@ export const HeaderContainer = styled.div`
   flex-shrink: 0;
   background-color: #fff;
   justify-content: space-between;
-  margin-left: 20px;
   margin-right:20px;
   height: 70px;
-  font-family: SF Pro Display;
+  font-family: 'SF Pro Display', sans-serif;
 `;
 export const RightNav = styled.div`
   display: inline-flex;
@@ -56,18 +55,9 @@ export const BreadcrumbWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
-`;
-export const StyledButton = styled.button`
-  display: flex;
-  padding: 16px 8px;
-  align-items: center;
-  gap: 8px;
-`;
-export const ButtonText = styled.div`
-  color: #324050;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: normal;
+  &:hover{
+    ${CursorPointer};
+  }
 `;
 export const Line = styled.div`
   width: 1px;
@@ -132,6 +122,9 @@ height:33px;
 color:#1B63A9;
 text-transform:uppercase;
 font-weight:bold;
+&:hover {
+  ${CursorPointer}
+}
 `
 export const HelpButton = styled.div`
   border-radius: 3px;

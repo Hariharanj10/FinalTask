@@ -6,7 +6,7 @@ const CursorType = {
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  font-family: SF Pro Display;
+  font-family: 'SF Pro Display', sans-serif;
   max-width:1219px;
 `;
 export const LeftNav = styled.div`
@@ -18,7 +18,7 @@ export const Text = styled.div`
   font-weight: 400;
   line-height: 140%;
   margin-left: 7px;
-  margin: 26px 293px 26px 1px;
+  margin: 26px 280px 26px 1px;
 `;
 
 export const RightNav = styled.div`
