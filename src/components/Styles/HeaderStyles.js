@@ -7,7 +7,7 @@ const CursorPointer = {
 
 export const HeaderContainer = styled.div`
   display: flex;
-  min-width:width: 1219px;
+  width: 1219px;
   height: 70px;
   flex-shrink: 0;
   background-color: #fff;
@@ -119,6 +119,20 @@ export const UserRole = styled.div`
 export const LeftNav = styled.div`
   display: flex;
 `;
+export const TextTagButton=styled.button`
+display: flex;
+align-items:center;
+padding: 5px 14px 6px 14px;
+margin:19px 0px 26px 478px;
+gap: 10px;
+border-radius: 2px;
+border: 1px solid  #AFC8E1;
+background-color:  #EDF3F8;
+height:33px;
+color:#1B63A9;
+text-transform:uppercase;
+font-weight:bold;
+`
 export const HelpButton = styled.div`
   border-radius: 3px;
   background-color: #e4e7ea;

@@ -6,7 +6,6 @@ const Container = styled.div`
   display: flex;
   width: 367px;
   height: 206px;
-  padding: 20px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -21,7 +20,6 @@ const InnerWrapper = styled.div`
   height: 176px;
   flex-shrink: 0;
   background: #f8f8f9;
-  padding:20px;
 `;
 const TextWrapper = styled.div`
   display: flex;

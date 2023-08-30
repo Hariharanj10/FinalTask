@@ -2,48 +2,62 @@ import React from "react";
 import Header from "./Header";
 import Subheader from "./Subheader";
 import ImageContainer from "./ImageContainer";
-import AgentsRectangle from "./AgentsRectangle";
+import AccountProfile from "./AccountProfile";
 import Score from "./Score";
 import styled from "styled-components";
 import ActiveCampaigns from "./ActiveCampaigns";
 import LeaderBoard from "./LeaderBoard";
+import SurveyTrend from "./SurveyTrend";
 
-const Container = styled.div`
+const Container=styled.div`
+    margin: 20px;
+    margin-top:0px;
+    width: 1219px;
+`
+const Wrapper = styled.div`
   display: flex;
-  margin:20px;
-  gap:20px;
-  background-color:#F8F8F9;
+  flex-direction: column;
+  background-color: #f8f8f9;
+`;
+const MainContainer = styled.div`
+  display: flex;
+  margin: 20px;
+  margin-top: 0px;
+  gap: 20px;
+  background-color: #f8f8f9;
 `;
 const FirstColumn = styled.div`
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 `;
 const SecondColumn = styled.div`
   display: flex;
   flex-direction: column;
-  gap:20px;
-  width:100%;
+  gap: 20px;
+  width: 100%;
 `;
 
 const Dashboard = () => {
   return (
-    <>
-    <Header/>
-    <Subheader />
-      <Container>
-       
-        <FirstColumn>
-          <ImageContainer />
-          <AgentsRectangle />
-        </FirstColumn>
-        <SecondColumn>
-          <Score />
-          <ActiveCampaigns/>
-          {/* <LeaderBoard/> */}
-        </SecondColumn>
-      </Container>
-    </>
+    <Container>
+      <Header />
+      <Wrapper>
+        <Subheader />
+        <MainContainer>
+          <FirstColumn>
+            <ImageContainer />
+            <AccountProfile />
+            <SurveyTrend />
+          </FirstColumn>
+          <SecondColumn>
+            <Score />
+            <ActiveCampaigns />
+            <LeaderBoard />
+          </SecondColumn>
+        </MainContainer>
+      </Wrapper>
+    </Container>
   );
 };
 

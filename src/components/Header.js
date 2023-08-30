@@ -1,7 +1,6 @@
 import React from "react";
 import Hamberger from "../assets/hamberger";
 import BreadcrumbIcon from "../assets/BreadcrumbIcon";
-import TextTag from "../assets/TextTag";
 import DropdownIcon from "../assets/DropdownIcon";
 import {
   HeaderContainer,
@@ -17,7 +16,8 @@ import {
   UserName,
   UserRole,
   UserDetails,
-  HelpButton
+  HelpButton,
+  TextTagButton
 } from "./Styles/HeaderStyles";
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
         </NavWrapper>
       </RightNav>
       <LeftNav>
-        <TextTag />
+        <TextTagButton>ORG - NORTH PACIFIC</TextTagButton>
         <HelpButton>
           Help
         </HelpButton>
