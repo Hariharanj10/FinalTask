@@ -7,14 +7,14 @@ const CursorPointer = {
 
 export const HeaderContainer = styled.div`
   display: flex;
-  width: 1219px;
+  min-width: 1219px;
   height: 70px;
   flex-shrink: 0;
   background-color: #fff;
   justify-content: space-between;
-  margin-right:20px;
+  margin-right: 20px;
   height: 70px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 `;
 export const RightNav = styled.div`
   display: inline-flex;
@@ -55,7 +55,7 @@ export const BreadcrumbWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
-  &:hover{
+  &:hover {
     ${CursorPointer};
   }
 `;
@@ -109,23 +109,23 @@ export const UserRole = styled.div`
 export const LeftNav = styled.div`
   display: flex;
 `;
-export const TextTagButton=styled.button`
-display: flex;
-align-items:center;
-padding: 5px 14px 6px 14px;
-margin:19px 0px 26px 478px;
-gap: 10px;
-border-radius: 2px;
-border: 1px solid  #AFC8E1;
-background-color:  #EDF3F8;
-height:33px;
-color:#1B63A9;
-text-transform:uppercase;
-font-weight:bold;
-&:hover {
-  ${CursorPointer}
-}
-`
+export const TextTagButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 5px 14px 6px 14px;
+  margin: 19px 0px 26px 478px;
+  gap: 10px;
+  border-radius: 2px;
+  border: 1px solid #afc8e1;
+  background-color: #edf3f8;
+  height: 33px;
+  color: #1b63a9;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    ${CursorPointer}
+  }
+`;
 export const HelpButton = styled.div`
   border-radius: 3px;
   background-color: #e4e7ea;

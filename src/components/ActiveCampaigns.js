@@ -18,20 +18,21 @@ import {
   Number,
   ProgressWrapper,
   CompletionRateText,
-  View
-} from "./Styles/ActiveCampaignsStyles"
+  View,
+} from "./Styles/ActiveCampaignsStyles";
 
 const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings }) => {
+  const stars = [1,2,3,4,5]
+
   return (
     <Campaigns>
       <Wrapper>
         <RatingsWrapper>
           <SurveyType>{SurveyHeading}</SurveyType>
-
           <StarContainer>
-            {[1, 2, 3, 4, 5]?.map((index) => {
-              return <Star key={index} />;
-            })}
+            {stars.map((_, index) => (
+              <Star key={index} />
+            ))}
             <RatingPercentage>{Ratings}</RatingPercentage>
             <Vector72 />
             <Number>{Count}</Number>
@@ -45,7 +46,23 @@ const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings }) => {
     </Campaigns>
   );
 };
+
 const ActiveCampaigns = () => {
+  const campaignsData = [
+    {
+      SurveyHeading: "Mid-Process Survey",
+      Count: 457,
+      Ratings: 4.9,
+      ProgressBar: <GreenProgress />,
+    },
+    {
+      SurveyHeading: "Closing Survey",
+      Count: 1800,
+      Ratings: 4.9,
+      ProgressBar: <OrangeProgress />,
+    },
+  ];
+
   return (
     <Container>
       <Header>
@@ -55,18 +72,9 @@ const ActiveCampaigns = () => {
           <RightArrow />
         </ViewWrapper>
       </Header>
-      <CampaignsComponent
-        SurveyHeading="Mid-Process Survey"
-        Count={457}
-        Ratings={4.9}
-        ProgressBar={<GreenProgress />}
-      />
-      <CampaignsComponent
-        SurveyHeading="Closing Survey"
-        Count={1800}
-        Ratings={4.9}
-        ProgressBar={<OrangeProgress />}
-      />
+      {campaignsData.map((campaign, index) => (
+        <CampaignsComponent key={index} {...campaign} />
+      ))}
     </Container>
   );
 };

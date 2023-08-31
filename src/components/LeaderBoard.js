@@ -17,7 +17,7 @@ import {
   TableDataID,
   HeaderTitle1,
   HeaderTitle2,
-  HeaderTitle3
+  HeaderTitle3,
 } from "./Styles/LeaderBoardStyles";
 const LeaderBoard = () => {
   const columns = ["Rank", "Agents", "Average Score"];

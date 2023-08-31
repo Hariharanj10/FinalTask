@@ -6,8 +6,8 @@ const CursorType = {
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  font-family: 'SF Pro Display', sans-serif;
-  max-width:1219px;
+  font-family: "SF Pro Display", sans-serif;
+  max-width: 1219px;
 `;
 export const LeftNav = styled.div`
   display: flex;
@@ -63,7 +63,7 @@ export const ExportButton = styled.button`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border:none;
+  border: none;
   &:hover {
     ${CursorType}
   }

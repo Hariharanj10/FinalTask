@@ -11,12 +11,13 @@ import SurveyTrend from "./SurveyTrend";
 import Transaction from "./Transaction";
 import Products from "./Products";
 import ProductContainer from "./ProductContainer";
+import DataDisplay from "./DataDisplay";
 
-const Container=styled.div`
-    margin: 20px;
-    margin-top:0px;
-    width: 1219px;
-`
+const Container = styled.div`
+  margin: 20px;
+  margin-top: 0px;
+  // width: 1219px;
+`;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,10 +41,10 @@ const SecondColumn = styled.div`
   gap: 20px;
   width: 100%;
 `;
-const TransactionSection=styled.div`
-  display:flex;
-  gap:19px;
-`
+const TransactionSection = styled.div`
+  display: flex;
+  gap: 19px;
+`;
 const Dashboard = () => {
   return (
     <Container>
@@ -56,11 +57,11 @@ const Dashboard = () => {
             <AccountProfile />
             <SurveyTrend />
             <TransactionSection>
-            <Transaction/>
-            <Transaction/>
+              <Transaction Title1="Processed Transactions" Title2="Unprocessed Transactions"/>
+              <Transaction Title1="Surveys Sent (Automated)" Title2="Surveys Sent (Manual)" />
             </TransactionSection>
-            <Products/>
-            <ProductContainer/>
+            <Products />
+            <ProductContainer />
           </FirstColumn>
           <SecondColumn>
             <Score />
@@ -69,6 +70,7 @@ const Dashboard = () => {
           </SecondColumn>
         </MainContainer>
       </Wrapper>
+      <DataDisplay/>
     </Container>
   );
 };

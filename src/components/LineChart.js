@@ -8,62 +8,85 @@ import {
   LinearScale,
   PointElement,
   Legend,
-  Tooltip
-}  from "chart.js";
+} from "chart.js";
 
-Chartjs.register(
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Legend
-);
+Chartjs.register(LineElement, CategoryScale, LinearScale, PointElement, Legend);
 
-const Container =styled.div`
-  display:flex;
-  width:547px;
-  margin:29px 25px 28px 18px ;
+const Container = styled.div`
+  display: flex;
+  width: 547px;
+  margin: 29px 25px 28px 18px;
 `;
+
 const LineChart = () => {
-  const data={
-    labels: ["06 Jan", "08 Jan", "10 Jan", "12 Jan", "15 Jan", "20 Jan", "25 Jan"],
+  const data = {
+    labels: [
+      "06 Jan",
+      "08 Jan",
+      "10 Jan",
+      "12 Jan",
+      "15 Jan",
+      "20 Jan",
+      "25 Jan",
+    ],
     datasets: [
       {
-        label:'Transaction Completed',
-        label:'Survey Completed',
-        data: [0,2000, 4000, 6000, 8000],
-        backgroundColor:'aqua',
-        borderColor: ' #3D7AB6',
-        pointBorderColor:'#3D7AB6'
-      }]
-  }
-  const options ={
-    plugins:{
-      
+        data: [0, 2000, 2500, 4000, 6000,5000],
+        backgroundColor: "#3D7AB6",
+        borderColor: "#3D7AB6",
+        pointBorderColor: "#3D7AB6",
+        pointStyle: "circle", 
+        pointRadius: 3, 
+      },
+      {  
+        data: [1000, 3500, 2500, 4000,3500,6000],
+        backgroundColor: "#5DC288",
+        borderColor: "#5DC288",
+        pointBorderColor: "#5DC288",
+        pointStyle: "circle", 
+        pointRadius: 3, 
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio:false,
+    scales: {
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false,
+        },
+      },
+      y: {
+        grid: {
+          display: true,
+          drawBorder: false,
+        },
+        ticks: {
+          values: [0, 2000, 4000, 6000, 8000],
+        },
+      },
+    },
+    plugins: {
       legend: {
-        display: true,
+        display: false,
         layout: {
           padding: {
             left: 10,
             right: 10,
             top: 50,
-            bottom: 10
-          }
-        }
-      }
+            bottom: 10,
+          },
+        },
+      },
     },
-    scales:{
-      y:{
-        min:3,
-        max:6
-      }
-    }
-  }
+  };
+
   return (
     <Container>
-      <Line data={data} >
-      options={options}
-      </Line>
+      <Line data={data} options={options} height={190}/>
     </Container>
   );
 };

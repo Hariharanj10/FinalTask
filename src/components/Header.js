@@ -17,7 +17,7 @@ import {
   UserRole,
   UserDetails,
   HelpButton,
-  TextTagButton
+  TextTagButton,
 } from "./Styles/HeaderStyles";
 
 const Header = () => {
@@ -38,9 +38,7 @@ const Header = () => {
       </RightNav>
       <LeftNav>
         <TextTagButton>ORG - NORTH PACIFIC</TextTagButton>
-        <HelpButton>
-          Help
-        </HelpButton>
+        <HelpButton>Help</HelpButton>
 
         <Line />
         <Userwrapper>

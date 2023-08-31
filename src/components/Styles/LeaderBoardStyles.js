@@ -2,15 +2,12 @@ import styled from "styled-components";
 
 export const TableContainer = styled.div`
   width: 367px;
-  font-family: 'SF Pro Display', sans-serif;
-  box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.10);
-  
+  font-family: "SF Pro Display", sans-serif;
+  box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
 `;
 export const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
-  
-  
   border-radius: 3px;
 `;
 export const TableHeader = styled.td`
@@ -28,10 +25,11 @@ export const TableData = styled.td`
 export const TableRow = styled.tr`
   width: 367px;
   border-bottom: 1px solid #e8ecf0;
+  height:47px;
 `;
 export const TableHeaderRow = styled.tr`
   height: 33.952px;
-  background-color:#F0F2F4;
+  background-color: #f0f2f4;
 `;
 export const FirstRow = styled.td`
   color: #242e39;
@@ -70,7 +68,7 @@ export const ViewWrapper = styled.div`
   margin-right: 20.14px;
 `;
 export const StyledImg = styled.img`
-  margin-right:10px;
+  margin-right: 10px;
 `;
 export const ImgRow = styled.div`
   display: flex;
@@ -90,21 +88,19 @@ export const TableDataID = styled.td`
   font-size: 14px;
   font-weight: 400;
   border-bottom: 1px solid #e8ecf0;
-  padding-left:20px;
-  width:70px;
+  padding-left: 20px;
+  width: 70px;
 `;
-export const HeaderTitle1=styled.th`
-color: #637487;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-left:20px;
-text-align:left;
+export const HeaderTitle1 = styled.th`
+  color: #637487;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 20px;
+  text-align: left;
 `;
-export const HeaderTitle2=styled(HeaderTitle1)`
-  padding-left:0;
+export const HeaderTitle2 = styled(HeaderTitle1)`
+  padding-left: 0;
 `;
-export const HeaderTitle3=styled(HeaderTitle1)`
-
-`;
+export const HeaderTitle3 = styled(HeaderTitle1)``;

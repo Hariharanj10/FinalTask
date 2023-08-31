@@ -39,6 +39,7 @@ import {
 } from "./Styles/AccountProfileStyles";
 
 const AccountProfile = () => {
+  const avatars = [Avatar1, Avatar2, Avatar3, Avatar4, Avatar5, Avatar6];
   return (
     <Container>
       <FirstRow>
@@ -77,12 +78,9 @@ const AccountProfile = () => {
             margin: "31.42px 39.26px 28.58px 17px",
           }}
         >
-          <Avatar src={Avatar1} />
-          <Avatar src={Avatar2} />
-          <Avatar src={Avatar3} />
-          <Avatar src={Avatar4} />
-          <Avatar src={Avatar5} />
-          <Avatar src={Avatar6} />
+          {avatars?.map((avatar, index) => (
+            <Avatar key={index} src={avatar} />
+          ))}
         </Avatar.Group>
         <Vector48 />
         <TierWrapper>
