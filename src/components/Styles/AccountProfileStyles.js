@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 3px;
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
-  // font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   line-height: normal;
   font-style: normal;
 `;
@@ -45,11 +45,10 @@ export const TextWrapper = styled.div`
   margin-left: 18.59px;
 `;
 export const Text = styled.div`
-  width: 324px;
   color: #242e39;
   font-size: 24px;
   font-weight: 600;
-  margin: 30px 128px 0px 0px;
+  margin: 30px 103px 0px 0px;
 `;
 export const Text2 = styled.div`
   color: #637487;
@@ -83,16 +82,12 @@ export const RatingStarWrapper = styled.div`
 `;
 export const RatingStar = styled(Rate)`
   color: #1b63a9;
-  font-family: Font Awesome 5 Free;
   font-size: 14px;
   font-weight: 900;
 `;
 export const AgentCount = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
-  margin-top: 26px;
-  margin-bottom: 23px;
   margin: 26px 0px 23px 25px;
 `;
 export const Count = styled.div`
@@ -101,7 +96,7 @@ export const Count = styled.div`
   font-weight: 700;
 `;
 export const AgentText = styled.div`
-  color:  #637487
+  color:  #637487;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.21px;
@@ -141,7 +136,7 @@ export const ProfileText = styled.div`
 export const CompletionWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 26px 113px 24px 20px;
+  margin: 26px auto 24px 20px;
 `;
 export const CompletionPercentage = styled.div`
   color: #242e39;

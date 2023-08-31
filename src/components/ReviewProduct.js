@@ -53,6 +53,7 @@ const FirstRow=styled.div`
   display:flex;
   height:93px;
   border-bottom: 1px solid #e4e7ea;
+  margin:0px 20px;
 `;
 const TotalCount=styled.div`
 color: #161C22;
@@ -60,25 +61,29 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin:32px 8px 32px 23px;
+margin:32px 8px 32px 3px;
 `;
-const TotalProfile=styled.div`
+const Profile=styled.div`
 color:  #768595;
 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin:42px 101px 34px 0px;
+margin:42px auto 34px 0px;
 `;
 const SecondRow=styled.div`
     display:flex;
+    margin-top:12px;
+    margin-bottom:21px;
     
 `;
 const SecondRowSection=styled.div`
     display:flex;
     flex-direction:column;
-    
+    border-right:${props=>props?.borderRight};
+    margin-left:19px;
+    width:110px;
 `;
 const Count =styled.div`
 color: #161C22;
@@ -86,7 +91,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin:12px 84px 0px 23px;
+
 `;
 const TextProfiles=styled.div`
 color:  #637487;
@@ -95,16 +100,16 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 letter-spacing: 0.21px;
-margin-left:${props => props?.marginLeft }
+// margin-left:${props => props?.marginLeft }
 `;
 const Line=styled.div`
 
 `;
-const ReviewProduct = () => {
+const ReviewProduct = ({TitleValue,TotalCountValue,ProfileValue,CountValue,TextProfilesValue}) => {
   return (
     <Container>
       <Header>
-        <Title>Review</Title>
+        <Title>{TitleValue}</Title>
         <ViewWrapper>
           <View>View</View>
           <ArrowWrapper>
@@ -115,21 +120,21 @@ const ReviewProduct = () => {
       <Main>
         <FirstRow>
             <TotalCount>
-                372
+                {TotalCountValue}
             </TotalCount>
-            <TotalProfile>
-                TotalProfile
-            </TotalProfile>
+            <Profile>
+                {ProfileValue}
+            </Profile>
         </FirstRow>
         <SecondRow>
-            <SecondRowSection >
-                <Count>16</Count>
-                <TextProfiles marginLeft="23px">Agent Profiles</TextProfiles>
+            <SecondRowSection borderRight="1px solid #E4E7EA">
+                <Count>{CountValue}</Count>
+                <TextProfiles >{TextProfilesValue}</TextProfiles>
             </SecondRowSection>
             
             <SecondRowSection>
-                <Count>352</Count>
-                <TextProfiles>Location Profiles</TextProfiles>
+                <Count>{CountValue}</Count>
+                <TextProfiles>{TextProfilesValue}</TextProfiles>
             </SecondRowSection>
         </SecondRow>
       </Main>
@@ -138,3 +143,5 @@ const ReviewProduct = () => {
 };
 
 export default ReviewProduct;
+
+

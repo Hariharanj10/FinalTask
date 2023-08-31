@@ -70,8 +70,8 @@ const Transaction = () => {
     <Container>
       
         <Header>
-         <Title color="#768595" marginRight="24px" fontWeight="400px">Processed Transactions</Title>
-         <Title color="#2B69A9" marginLeft="12px" fontWeight="600px" borderBottom="3px solid #2B69A9">Unprocessed Transactions</Title>
+         <Title color="#768595" marginRight="15px" fontWeight="400px">Processed Transactions</Title>
+         <Title color="#2B69A9"  fontWeight="600px" borderBottom="3px solid #2B69A9">Unprocessed Transactions</Title>
         </Header>
         
         {columns?.map((item, index) => (
