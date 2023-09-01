@@ -12,6 +12,9 @@ const Container = styled.div`
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
   height: 367px;
   font-family: "SF Pro Display", sans-serif;
+  &:hover{
+    cursor:pointer;
+  }
 `;
 const Header = styled.div`
   display: flex;

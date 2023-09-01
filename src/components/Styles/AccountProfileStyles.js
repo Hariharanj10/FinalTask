@@ -11,6 +11,9 @@ export const Container = styled.div`
   font-family: "SF Pro Display", sans-serif;
   line-height: normal;
   font-style: normal;
+  &:hover{
+    cursor:pointer;
+  }
 `;
 export const Box = styled.div`
   width: 74.824px;

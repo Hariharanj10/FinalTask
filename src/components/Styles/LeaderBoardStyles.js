@@ -4,6 +4,10 @@ export const TableContainer = styled.div`
   width: 367px;
   font-family: "SF Pro Display", sans-serif;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
+  background-color:#FFF;
+  &:hover{
+    cursor:pointer;
+  }
 `;
 export const StyledTable = styled.table`
   width: 100%;
@@ -60,7 +64,7 @@ export const View = styled.div`
   font-size: 15px;
   font-weight: 400;
   line-height: normal;
-  margin-right: 5px;
+  margin-right: 11px;
 `;
 export const ViewWrapper = styled.div`
   display: flex;

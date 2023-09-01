@@ -30,7 +30,7 @@ const OrangeProgress = () => {
         <text
           x="30"
           y="40"
-          font-family="SF Pro Display"
+          font-family="sans-serif"
           font-size="13px"
           font-style="normal"
           font-weight="600"

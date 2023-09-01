@@ -20,7 +20,6 @@ import {
   HeaderTitle3,
 } from "./Styles/LeaderBoardStyles";
 const LeaderBoard = () => {
-  const columns = ["Rank", "Agents", "Average Score"];
   const rows = [
     { rank: 1, agents: "Agent A", score: "9,500" },
     { rank: 2, agents: "Agent B", score: "8,500" },

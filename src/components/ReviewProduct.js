@@ -39,7 +39,7 @@ const View = styled.div`
   line-height: normal;
 `;
 const ArrowWrapper = styled.div`
-  margin-left: 7px;
+  margin-left: 8px;
 `;
 const ViewWrapper = styled.div`
   display: flex;

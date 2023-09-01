@@ -21,7 +21,7 @@ import {
   View,
 } from "./Styles/ActiveCampaignsStyles";
 
-const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings }) => {
+const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings ,marginLeft}) => {
   const stars = [1,2,3,4,5]
 
   return (
@@ -38,7 +38,7 @@ const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings }) => {
             <Number>{Count}</Number>
           </StarContainer>
         </RatingsWrapper>
-        <ProgressWrapper>
+        <ProgressWrapper marginLeft={marginLeft}>
           {ProgressBar}
           <CompletionRateText>Completion Rate</CompletionRateText>
         </ProgressWrapper>
@@ -54,12 +54,14 @@ const ActiveCampaigns = () => {
       Count: 457,
       Ratings: 4.9,
       ProgressBar: <GreenProgress />,
+      marginLeft:"29px"
     },
     {
       SurveyHeading: "Closing Survey",
       Count: 1800,
       Ratings: 4.9,
       ProgressBar: <OrangeProgress />,
+      marginLeft:"23px"
     },
   ];
 

@@ -16,9 +16,9 @@ const BoxIcon = () => {
         <path
           d="M43.128 17.169h-18.93a2.704 2.704 0 0 0-2.704 2.704v18.93a2.704 2.704 0 0 0 2.704 2.704h18.93a2.704 2.704 0 0 0 2.704-2.704v-18.93a2.704 2.704 0 0 0-2.704-2.704Zm-21.634 8.113h24.338M29.607 41.507V25.282"
           stroke="#FAFCFD"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <defs>
           <filter
@@ -28,9 +28,9 @@ const BoxIcon = () => {
             width="68"
             height="68"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"

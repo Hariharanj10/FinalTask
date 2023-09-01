@@ -13,6 +13,9 @@ const TableRow = styled.tr`
   &:nth-child(even) {
     background-color: #f2f2f2;
   }
+  &:hover{
+    cursor:pointer;
+  }
 `;
 
 const TableHeader = styled.th`
@@ -44,8 +47,8 @@ const DataDisplay = () => {
   useEffect(() => {
     dispatch(callApi());
   }, [dispatch]);
-
-  const { loading, data, error } = useSelector((state) => state?.userData?.datas);
+  const {loading,error}=useSelector(state => state?.userData)
+  const {data} = useSelector((state) => state?.userData?.datas);
 
   if (loading) {
     return <LoadingMessage>Loading...</LoadingMessage>;
@@ -56,7 +59,9 @@ const DataDisplay = () => {
   }
 
   return (
-    <Table>
+    <>
+    <h1>API DATA</h1>
+     <Table>
       <thead>
         <TableRow>
           <TableHeader>Name</TableHeader>
@@ -67,7 +72,7 @@ const DataDisplay = () => {
       </thead>
       <tbody>
         {data?.map((item) => (
-          <TableRow key={item.id}>
+          <TableRow key={item?.id}>
             <TableCell>{item?.name}</TableCell>
             <TableCell>{item?.organization_id}</TableCell>
             <TableCell>{item?.active_tiers_count}</TableCell>
@@ -76,6 +81,8 @@ const DataDisplay = () => {
         ))}
       </tbody>
     </Table>
+    </>
+   
   );
 };
 

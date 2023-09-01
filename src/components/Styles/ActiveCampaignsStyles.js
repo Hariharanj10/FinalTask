@@ -9,6 +9,9 @@ export const Container = styled.div`
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
   font-family: 'SF Pro Display', sans-serif;
+  &:hover{
+    cursor:pointer;
+  }
 `;
 export const Header = styled.div`
   display: flex;
@@ -32,7 +35,7 @@ export const View = styled.div`
   font-size: 15px;
   font-weight: 400;
   line-height: normal;
-  margin-right: 5px;
+  margin-right: 11px;
 `;
 export const ViewWrapper = styled.div`
   display: flex;
@@ -63,6 +66,7 @@ export const RatingsWrapper = styled.div`
 export const StarContainer = styled.div`
   display: flex;
   margin-top: 10px;
+  gap:3px;
 `;
 export const RatingPercentage = styled.div`
   color: #242e39;
@@ -83,11 +87,12 @@ export const Number = styled.div`
 export const ProgressWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 43px;
+  margin-left:${props => props?.marginLeft}
 `;
 export const CompletionRateText = styled.div`
   color: #637487;
-  font-size: 12px;
+  margin-left:1px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;

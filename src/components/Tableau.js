@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import BoxIcon from "../assets/BoxIcon";
 import Vector50 from "../assets/Vector50";
 import RightArrow from "../assets/RightArrow";
 

@@ -13,6 +13,9 @@ const Container = styled.div`
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
   font-family: "SF Pro Display", sans-serif;
+  &:hover{
+    cursor:pointer;
+  }
 `;
 const InnerWrapper = styled.div`
   display: flex;

@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 387px;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
   height: 473px;
+  background-color:#FFF;
 `;
 export const Title = styled.div`
   width: 188px;
@@ -64,13 +65,6 @@ const columns = [
   { Title: "Duplicate Transactions", Count: "1,411" },
   { Title: "Corrupted Transactions", Count: "1,890" },
   { Title: "Unsubcribed Transactions", Count: "1,046" },
-];
-const Column2 = [
-  { Title: "Survey Sent (Manual)", Count: "8,483" },
-  { Title: "Posted On Social Media", Count: "2,216" },
-  { Title: "Social Posts", Count: "1,411" },
-  { Title: "Marked Abusive", Count: "1,890" },
-  { Title: "Reviews Replied To", Count: "1,046" },
 ];
 const Transaction = ({ Title1, Title2 }) => {
   return (
