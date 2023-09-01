@@ -8,7 +8,7 @@ const Container = styled.div`
   height: 187px;
   margin: 62px 20px 40px 25px;
   font-family: "SF Pro Display", sans-serif;
-  background-color:  #f8f8f9;
+  background-color: #f8f8f9;
 `;
 const FirstRow = styled.div`
   display: flex;

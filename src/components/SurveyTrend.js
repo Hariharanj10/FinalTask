@@ -10,7 +10,7 @@ const Container = styled.div`
   border-radius: 3px;
   background: #fff;
   box-shadow: 0px 5px 10px 0px rgba(99, 116, 135, 0.1);
-  height:367px;
+  height: 367px;
   font-family: "SF Pro Display", sans-serif;
 `;
 const Header = styled.div`
@@ -34,19 +34,31 @@ const Main = styled.div`
   display: flex;
   heigth: 289px;
 `;
-const StatusTextWrapper=styled.div`
-    display:flex;
+const StatusTextWrapper = styled.div`
+  display: flex;
+  margin-top: 29px;
+  margin-left: 124px;
 `;
-const StatusText1=styled.li`
-color: #000;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 12px; 
-list-style-type: circle;
+const StatusText1 = styled.li`
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  list-style-type: circle;
+  &::marker {
+    border-radius: 10px;
+    color: #3d7ab6;
+    width: 8px;
+    height: 8px;
+  }
 `;
-const StatusText2=styled(StatusText1)`
-
+const StatusText2 = styled(StatusText1)`
+  margin-left: 20px;
+  &::marker {
+    color: #5dc288;
+    background-color: #5dc288;
+  }
 `;
 const SurveyTrend = () => {
   return (
@@ -55,9 +67,9 @@ const SurveyTrend = () => {
         <Title>Transaction and Survey Trend</Title>
       </Header>
       <StatusTextWrapper>
-          <StatusText1>Transactions Completed</StatusText1>
-          <StatusText2>Surveys Completed</StatusText2>
-        </StatusTextWrapper>
+        <StatusText1>Transactions Completed</StatusText1>
+        <StatusText2>Surveys Completed</StatusText2>
+      </StatusTextWrapper>
       <Main>
         <LineChart />
         <SurveyInfo />

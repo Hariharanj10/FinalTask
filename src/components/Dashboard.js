@@ -29,6 +29,10 @@ const MainContainer = styled.div`
   margin-top: 0px;
   gap: 20px;
   background-color: #f8f8f9;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  
 `;
 const FirstColumn = styled.div`
   display: flex;

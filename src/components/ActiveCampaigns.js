@@ -30,7 +30,7 @@ const CampaignsComponent = ({ SurveyHeading, ProgressBar, Count, Ratings }) => {
         <RatingsWrapper>
           <SurveyType>{SurveyHeading}</SurveyType>
           <StarContainer>
-            {stars.map((_, index) => (
+            {stars?.map((_, index) => (
               <Star key={index} />
             ))}
             <RatingPercentage>{Ratings}</RatingPercentage>
@@ -72,7 +72,7 @@ const ActiveCampaigns = () => {
           <RightArrow />
         </ViewWrapper>
       </Header>
-      {campaignsData.map((campaign, index) => (
+      {campaignsData?.map((campaign, index) => (
         <CampaignsComponent key={index} {...campaign} />
       ))}
     </Container>

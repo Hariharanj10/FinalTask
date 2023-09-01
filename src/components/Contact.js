@@ -21,7 +21,6 @@ const Brand = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  // margin: 10px 108px 7px 120px;
 `;
 const BoxIconContainer = styled.div`
   margin: 21px 108 0px 0px;
@@ -37,8 +36,6 @@ const Description = styled.div`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.195px;
-  // margin-top: 7px;
-  // margin-left: 10px;
 `;
 const Navigation = styled.div`
   display: flex;

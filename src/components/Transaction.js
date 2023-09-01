@@ -65,20 +65,19 @@ const columns = [
   { Title: "Corrupted Transactions", Count: "1,890" },
   { Title: "Unsubcribed Transactions", Count: "1,046" },
 ];
-const Column2=[
-  {Title:"Survey Sent (Manual)",Count:"8,483"},
-  {Title:"Posted On Social Media",Count:"2,216"},
-  {Title:"Social Posts",Count:"1,411"},
-  {Title:"Marked Abusive",Count:"1,890"},
-  {Title:"Reviews Replied To",Count:"1,046"},
-
-]
-const Transaction = ({Title1,Title2}) => {
+const Column2 = [
+  { Title: "Survey Sent (Manual)", Count: "8,483" },
+  { Title: "Posted On Social Media", Count: "2,216" },
+  { Title: "Social Posts", Count: "1,411" },
+  { Title: "Marked Abusive", Count: "1,890" },
+  { Title: "Reviews Replied To", Count: "1,046" },
+];
+const Transaction = ({ Title1, Title2 }) => {
   return (
     <Container>
       <Header>
         <Title color="#768595" marginRight="15px" fontWeight="400px">
-         {Title1}
+          {Title1}
         </Title>
         <Title
           color="#2B69A9"

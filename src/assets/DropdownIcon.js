@@ -20,9 +20,9 @@ const DropdownIcon = () => {
         <path
           d="m4.334 7.167 3.667 3.666 3.666-3.666"
           stroke="#3A4A5B"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </Container>

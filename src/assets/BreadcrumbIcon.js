@@ -13,8 +13,8 @@ const BreadcrumbIcon = () => {
       <path
         d="M3.75 7.5 6.25 5l-2.5-2.5"
         stroke="#768595"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
     </div>

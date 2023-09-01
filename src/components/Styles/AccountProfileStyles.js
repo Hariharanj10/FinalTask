@@ -65,7 +65,6 @@ export const RatingWrapper = styled.div`
 export const Ratings = styled.div`
   color: #242e39;
   font-size: 42px;
-
   font-weight: 300;
   margin: 30px 14px 0px 0px;
 `;

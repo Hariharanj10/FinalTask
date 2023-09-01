@@ -33,7 +33,6 @@ export const TableHeaderRow = styled.tr`
 `;
 export const FirstRow = styled.td`
   color: #242e39;
-  font-family: SF Pro Display;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;

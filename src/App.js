@@ -1,7 +1,7 @@
 import Dashboard from "./components/Dashboard";
 import styled from "styled-components";
 import { Provider } from "react-redux";
-import {store} from "./redux/store";
+import { store } from "./redux/store";
 
 const Container = styled.div`
   background-color: #fff;
@@ -12,9 +12,9 @@ const Container = styled.div`
 function App() {
   return (
     <Provider store={store}>
-    <Container>
-      <Dashboard />
-    </Container>
+      <Container>
+        <Dashboard />
+      </Container>
     </Provider>
   );
 }

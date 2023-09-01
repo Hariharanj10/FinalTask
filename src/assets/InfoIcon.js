@@ -15,11 +15,11 @@ const InfoIcon = () => {
         fill="none"
       >
         <g
-          clip-path="url(#a)"
+          clipPath="url(#a)"
           stroke="#324050"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path d="M9 16.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15ZM9 12V9m0-3h.008" />
         </g>

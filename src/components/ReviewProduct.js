@@ -65,7 +65,6 @@ const TotalCount = styled.div`
 `;
 const Profile = styled.div`
   color: #768595;
-
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -98,7 +97,6 @@ const TextProfiles = styled.div`
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.21px;
-  // margin-left:${(props) => props?.marginLeft}
 `;
 const ReviewProduct = ({
   TitleValue,
